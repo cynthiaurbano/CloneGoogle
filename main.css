@@ -1,0 +1,219 @@
+body{
+    background-image: url("https://www.todofondos.net/wp-content/uploads/1920x1080-Fondo-de-pantalla-negro-y-rosa-HD-Fondo-superior-y-papel-tapiz.jpg");
+    /* Ajusta la imagen para que llene la pantalla */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Afecta a todos los elementos del encabezado */
+header{
+    width: 100%;
+    height: 60px;
+}
+
+/* Afecta al nav dentro de header */
+header nav{
+    /* Hace flexible el contenido de nav */
+    display: flex;
+    /* Alinea el contenido de nav a la derecha */
+    justify-content: flex-end;
+}
+
+/* Afecta a los elementos de la clase .nav-right-section del nav */
+header nav .nav-right-section{
+    width: 230px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: white;
+}
+
+nav .nav-right-section .menu{
+    /* background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png); */
+    background-image: url(/ima/dots-menu.png);
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Estilo de Main: El estilo de la sección principal */
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 1px 0px #20212447;
+    border-color: #f3f4f7;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    padding-left: 6%;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    padding-left: 1%;
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    padding-right: 7%;
+}
+
+main .idioma{
+    color: black;
+    font-size: 14px;
+}
+main .idioma a{
+    color: blue;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+    height: 36px;
+    /* Fondo de botones */
+    background-color: #171718;
+    font-size: 14px;
+    /* Color de letra antes del hover */
+    color: #77797a;
+    /* Redondea los bordes */
+    border-radius: 4px;
+    /* Margen interno */
+    padding: 0 15px;
+    /* Margen entre botones */
+    margin-right: 15px;
+    border: 1px solid #5d5e5f;
+}
+
+/* Efecto hover */
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px 0px rgb(255, 255, 255);
+    background-color: #262627;
+    /* Cambia borde al hacer hover */
+    border: 1px solid #969494;
+    /* Cambia color de letra al hacer hover */
+    color: #ffffff;
+}
+
+footer .listas {
+    background-color: black;
+    width: 98%;
+    height: 50px;
+    position: absolute;
+    font-size: 15px;
+    border-top: 1px solid #1c1d1d;
+    /* Footer dividido en 2 columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    /* Posiciona el footer al final */
+    bottom: 0;
+}
+
+footer .pais{
+    background-color: black;
+    font-size: 15px;
+    color: #70757a;
+    width: 98%;
+    height: 45px;
+    position: absolute;
+    padding-left: 30px;
+    border-bottom: 1px solid #3c4043;
+    bottom: 51px;
+}
+
+footer .listas ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer  .listas  .footer-left{
+    justify-self: left;
+}
+
+footer  .listas  .footer-right{
+    justify-self: right;
+}
+
+footer  .listas  ul li a{
+    color: #70757a;
+    margin: 25px;
+}
